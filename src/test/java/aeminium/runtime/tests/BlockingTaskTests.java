@@ -69,6 +69,11 @@ public class BlockingTaskTests extends BaseTest {
 	}
 
 	@Test
+		public void testThatAlwaysFails() {
+		assertTrue(false);
+		}
+
+	@Test
 	public void manyTasksMix() {
 		Runtime rt = getRuntime();
 		rt.init();
